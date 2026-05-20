@@ -2,6 +2,17 @@ import { motion } from 'motion/react';
 import { useState } from 'react';
 import ImageModal from './ImageModal';
 
+const getDriveThumbnail = (urlOrId: string, size: number) => {
+  if (urlOrId.includes('lh3.googleusercontent.com/d/')) {
+    const id = urlOrId.split('lh3.googleusercontent.com/d/')[1].split('=')[0];
+    return `https://drive.google.com/thumbnail?id=${id}&sz=w${size}`;
+  }
+  if (!urlOrId.startsWith('http')) {
+    return `https://drive.google.com/thumbnail?id=${urlOrId}&sz=w${size}`;
+  }
+  return urlOrId;
+};
+
 const CourseBlock = ({ 
   tag, 
   title, 
@@ -40,13 +51,14 @@ const CourseBlock = ({
           <div className="flex items-center gap-4 mb-8">
             <motion.div 
               className="md:hidden w-12 h-12 rounded-full overflow-hidden border-2 border-navy/10 shadow-md flex-shrink-0 cursor-zoom-in"
-              onClick={() => onImageClick(`${img}=w1600`)}
+              onClick={() => onImageClick(getDriveThumbnail(img, 1600))}
             >
                <img 
-                 src={`${img}=w400`} 
+                 src={getDriveThumbnail(img, 400)} 
                  alt={title} 
                  className="w-full h-full object-cover" 
                  referrerPolicy="no-referrer"
+                 loading="lazy"
                />
             </motion.div>
             <div className="flex flex-col gap-2">
@@ -88,15 +100,16 @@ const CourseBlock = ({
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="cursor-zoom-in"
-            onClick={() => onImageClick(`${img}=w1600`)}
+            onClick={() => onImageClick(getDriveThumbnail(img, 1600))}
           >
             <div className="aspect-square rounded-full overflow-hidden shadow-2xl border-4 border-white bg-white">
               <img 
-                src={`${img}=w1200`} 
+                src={getDriveThumbnail(img, 1200)} 
                 alt={title} 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 antialiased" 
                 style={{ imageRendering: 'auto' }}
                 referrerPolicy="no-referrer"
+                loading="lazy"
               />
             </div>
           </motion.div>
@@ -135,7 +148,7 @@ const CourseBlock = ({
           </h4>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
             {galleryImages.map((id, i) => {
-              const fullSrc = `https://lh3.googleusercontent.com/d/${id}=w1600`;
+              const fullSrc = getDriveThumbnail(id, 1600);
               return (
                 <motion.div 
                   key={id + i}
@@ -144,10 +157,11 @@ const CourseBlock = ({
                   onClick={() => onImageClick(fullSrc)}
                 >
                   <img 
-                    src={`https://lh3.googleusercontent.com/d/${id}=w800`}
+                    src={getDriveThumbnail(id, 800)}
                     alt=""
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 antialiased"
                     referrerPolicy="no-referrer"
+                    loading="lazy"
                   />
                 </motion.div>
               );
