@@ -1,0 +1,6 @@
+{
+  "name": "Combo Confeitaria Naty",
+  "description": "Uma landing page profissional para o Combo Confeitaria Naty, adaptada para Vercel e focada em conversão.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
