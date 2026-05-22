@@ -39,8 +39,8 @@ const CourseBlock = ({
   onImageClick: (src: string) => void
 }) => {
   return (
-    <div className="py-20 border-b border-navy/10 last:border-0">
-      <div className={`flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-12 md:gap-24 mb-16`}>
+    <div className="py-8 md:py-20 border-b border-navy/10 last:border-0">
+      <div className={`flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-12 md:gap-24 mb-8 md:mb-16`}>
         <motion.div 
           initial={{ opacity: 0, x: reverse ? 50 : -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -224,7 +224,7 @@ export default function Courses() {
   ];
 
   return (
-    <section className="bg-eggshell py-24 px-6 overflow-hidden">
+    <section className="bg-eggshell pt-4 pb-12 md:py-24 px-6 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <CourseBlock 
           tag="CURSO 1"

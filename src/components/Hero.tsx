@@ -27,7 +27,7 @@ export default function Hero() {
   const allImages = [...mosaicImages, ...mosaicImages, ...mosaicImages];
 
   return (
-    <section className="relative min-h-[90vh] flex flex-col items-center justify-center text-center px-6 pt-12 pb-16 md:py-20 overflow-hidden">
+    <section className="relative min-h-[90vh] flex flex-col items-center justify-center text-center px-6 pt-12 pb-8 md:py-20 overflow-hidden">
       {/* Background Mosaic and Overlay */}
       <div className="absolute inset-0 -z-10 bg-eggshell overflow-hidden">
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 h-full w-full opacity-40">

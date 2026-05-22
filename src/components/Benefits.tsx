@@ -36,7 +36,7 @@ const benefits = [
 
 export default function Benefits() {
   return (
-    <section className="bg-eggshell py-24 px-6 overflow-hidden">
+    <section className="bg-eggshell pt-4 pb-24 md:py-24 px-6 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}

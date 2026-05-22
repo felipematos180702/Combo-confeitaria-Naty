@@ -5,7 +5,7 @@ import { ChevronDown } from 'lucide-react';
 const faqs = [
   {
     q: "Preciso ter experiência na confeitaria?",
-    a: "Não! Os cursos foram feitos para iniciantes. A Naty ensina do zero, passo a passo, de forma simples e prática. Se ela conseguiu começar do zero, você também consegue."
+    a: "Não! Os cursos foram feitos para iniciantes. A Naty ensina do zero, passo a passo, de forma simples e prática. Se ela conseguiu começar do zero, você também consegue. Os cursos foram feitos para iniciantes ou confeiteiros experientes"
   },
   {
     q: "O acesso é realmente vitalício?",
