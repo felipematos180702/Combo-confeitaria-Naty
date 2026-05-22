@@ -65,13 +65,13 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="flex items-center gap-1.5 md:gap-2 mb-4 md:mb-8 bg-black/20 md:bg-transparent backdrop-blur-sm md:backdrop-blur-none px-4 py-2 rounded-full border border-white/10 md:border-none"
+        className="flex items-center gap-1.5 md:gap-2 mb-4 md:mb-8"
       >
         <span className="hidden md:inline text-xl leading-normal">👑</span>
-        <span className="font-bold text-[14px] md:text-sm tracking-[0.2em] text-white uppercase drop-shadow-md flex flex-col md:flex-row items-center">
-          <span className="drop-shadow-lg">COMBO EXCLUSIVO</span>
+        <span className="font-bold text-[14px] md:text-sm tracking-[0.2em] text-white uppercase flex flex-col md:flex-row items-center">
+          <span>COMBO EXCLUSIVO</span>
           <span className="hidden md:inline mx-2 text-white/90">—</span>
-          <span className="drop-shadow-lg">ACESSO VITALÍCIO</span>
+          <span>ACESSO VITALÍCIO</span>
         </span>
       </motion.div>
 
