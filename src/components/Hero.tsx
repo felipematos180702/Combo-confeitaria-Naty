@@ -29,8 +29,8 @@ export default function Hero() {
   return (
     <section className="relative min-h-[90vh] flex flex-col items-center justify-center text-center px-6 pt-12 pb-8 md:py-20 overflow-hidden">
       {/* Background Mosaic and Overlay */}
-      <div className="absolute inset-0 -z-10 bg-eggshell overflow-hidden">
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 h-full w-full opacity-40">
+      <div className="absolute inset-0 -z-10 bg-eggshell overflow-hidden pointer-events-none" style={{ transform: 'translateZ(0)' }}>
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 w-full opacity-40">
           {allImages.slice(0, 24).map((id, index) => {
             const imgSrc = index === 0 
               ? "https://lh3.googleusercontent.com/d/1r5t8ZPJDwGReMjAUa1jTuFBbYQ41Ro6I" 
