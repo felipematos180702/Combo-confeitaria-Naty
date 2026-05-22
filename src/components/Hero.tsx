@@ -30,7 +30,7 @@ export default function Hero() {
     <section className="relative min-h-[90vh] flex flex-col items-center justify-center text-center px-6 pt-12 pb-8 md:py-20 overflow-hidden">
       {/* Background Mosaic and Overlay */}
       <div className="absolute inset-0 -z-10 bg-eggshell overflow-hidden pointer-events-none" style={{ transform: 'translateZ(0)' }}>
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 w-full opacity-40">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 w-full p-4 gap-4 opacity-20">
           {allImages.slice(0, 24).map((id, index) => {
             const imgSrc = index === 0 
               ? "https://lh3.googleusercontent.com/d/1r5t8ZPJDwGReMjAUa1jTuFBbYQ41Ro6I" 
@@ -41,13 +41,12 @@ export default function Hero() {
             return (
               <div 
                 key={index} 
-                className="aspect-square w-full h-full border border-black cursor-pointer hover:opacity-100 transition-opacity"
-                onClick={() => setSelectedImage(imgSrc)}
+                className="aspect-square w-full h-full rounded-2xl overflow-hidden shadow-sm border border-black/5 bg-white"
               >
                 <img 
                   src={imgSrc} 
                   alt="" 
-                  className="w-full h-full object-cover grayscale-[30%]"
+                  className="w-full h-full object-cover grayscale-[20%]"
                   referrerPolicy="no-referrer"
                   onError={(e) => {
                     (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1488477181946-6428a0291777";
@@ -57,7 +56,7 @@ export default function Hero() {
             );
           })}
         </div>
-        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-black/10" />
         {/* Soft transition to the next section */}
         <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-eggshell to-transparent pointer-events-none" />
       </div>
@@ -66,13 +65,13 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="flex items-center gap-1.5 md:gap-2 mb-4 md:mb-8"
+        className="flex items-center gap-1.5 md:gap-2 mb-4 md:mb-8 bg-black/20 md:bg-transparent backdrop-blur-sm md:backdrop-blur-none px-4 py-2 rounded-full border border-white/10 md:border-none"
       >
         <span className="hidden md:inline text-xl leading-normal">👑</span>
-        <span className="font-bold text-[14px] md:text-sm tracking-[0.2em] text-white/90 uppercase drop-shadow-sm flex flex-col md:flex-row items-center">
-          <span>COMBO EXCLUSIVO</span>
-          <span className="hidden md:inline mx-2">—</span>
-          <span>ACESSO VITALÍCIO</span>
+        <span className="font-bold text-[14px] md:text-sm tracking-[0.2em] text-white uppercase drop-shadow-md flex flex-col md:flex-row items-center">
+          <span className="drop-shadow-lg">COMBO EXCLUSIVO</span>
+          <span className="hidden md:inline mx-2 text-white/90">—</span>
+          <span className="drop-shadow-lg">ACESSO VITALÍCIO</span>
         </span>
       </motion.div>
 
@@ -80,7 +79,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="font-serif text-[26px] md:text-[53px] leading-[29.3px] md:leading-tight text-vermillion max-w-5xl mt-[82px] md:mt-0 mb-[40px] md:mb-8 tracking-tight font-bold pl-[18px] md:px-2 pr-[2px] md:pr-2 pt-0 pb-0 mr-[-12px] md:mr-0 ml-[-22px] md:ml-0 drop-shadow-lg md:drop-shadow-2xl [text-shadow:_2px_2px_4px_rgba(0,0,0,0.4),0_0_10px_rgba(255,255,255,0.15)] md:[text-shadow:_3px_4px_8px_rgb(0_0_0_/_80%)]"
+        className="font-serif text-[26px] md:text-[53px] leading-[29.3px] md:leading-tight text-vermillion max-w-5xl mt-[82px] md:mt-0 mb-[40px] md:mb-8 tracking-tight font-bold pl-[18px] md:px-2 pr-[2px] md:pr-2 pt-0 pb-0 mr-[-12px] md:mr-0 ml-[-22px] md:ml-0 drop-shadow-md md:drop-shadow-2xl [text-shadow:_1px_1px_2px_rgba(0,0,0,0.3),0_0_15px_rgba(255,255,255,0.3)] md:[text-shadow:_3px_4px_8px_rgb(0_0_0_/_80%)]"
       >
         Esses foram os meus dois cursos mais vendidos nos últimos anos e agora você pode garantir o combo com acesso vitalício.
       </motion.h1>
