@@ -58,7 +58,7 @@ export default function Hero() {
         </div>
         <div className="absolute inset-0 bg-black/5" />
         {/* Subtle top gradient for text contrast */}
-        <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-[#3D2314]/40 to-transparent pointer-events-none md:hidden" />
+        <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-[#3D2314]/30 to-transparent pointer-events-none md:hidden" />
         {/* Soft transition to the next section */}
         <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-eggshell to-transparent pointer-events-none" />
       </div>
@@ -81,7 +81,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="font-serif text-[26px] md:text-[53px] leading-[29.3px] md:leading-tight text-vermillion max-w-5xl mt-[10vh] md:mt-0 mb-[5vh] md:mb-8 tracking-tight font-bold pl-[18px] md:px-2 pr-[2px] md:pr-2 pt-0 pb-0 mr-[-12px] md:mr-0 ml-[-22px] md:ml-0 drop-shadow-md md:drop-shadow-2xl [text-shadow:_0_4px_16px_rgba(61,35,20,0.8),0_2px_4px_rgba(61,35,20,0.4)] md:[text-shadow:_3px_4px_8px_rgb(0_0_0_/_80%)]"
+        className="font-serif text-[26px] md:text-[53px] leading-[29.3px] md:leading-tight text-vermillion max-w-5xl mt-[10vh] md:mt-0 mb-[5vh] md:mb-8 tracking-tight font-bold pl-[18px] md:px-2 pr-[2px] md:pr-2 pt-0 pb-0 mr-[-12px] md:mr-0 ml-[-22px] md:ml-0 drop-shadow-md md:drop-shadow-2xl [text-shadow:_1px_1px_2px_rgba(0,0,0,0.4),0_0_20px_rgba(255,255,255,0.6)] md:[text-shadow:_3px_4px_8px_rgb(0_0_0_/_80%)]"
       >
         Esses foram os meus dois cursos mais vendidos nos últimos anos e agora você pode garantir o combo com acesso vitalício.
       </motion.h1>
