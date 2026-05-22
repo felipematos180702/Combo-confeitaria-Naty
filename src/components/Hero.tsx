@@ -49,7 +49,7 @@ export default function Hero() {
                   className="w-full h-full object-cover grayscale-0"
                   referrerPolicy="no-referrer"
                   onError={(e) => {
-                    (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1488477181946-6428a0291777";
+                     (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1488477181946-6428a0291777";
                   }}
                 />
               </div>
@@ -57,6 +57,8 @@ export default function Hero() {
           })}
         </div>
         <div className="absolute inset-0 bg-black/5" />
+        {/* Subtle top gradient for text contrast */}
+        <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-[#3D2314]/30 to-transparent pointer-events-none md:hidden" />
         {/* Soft transition to the next section */}
         <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-eggshell to-transparent pointer-events-none" />
       </div>
@@ -68,7 +70,7 @@ export default function Hero() {
         className="flex items-center gap-1.5 md:gap-2 mb-4 md:mb-8"
       >
         <span className="hidden md:inline text-xl leading-normal">👑</span>
-        <span className="font-bold text-[14px] md:text-sm tracking-[0.2em] text-white uppercase flex flex-col md:flex-row items-center">
+        <span className="font-bold text-[14px] md:text-sm tracking-[0.2em] text-white uppercase flex flex-col md:flex-row items-center [text-shadow:_0_4px_12px_rgba(61,35,20,0.8),0_2px_4px_rgba(61,35,20,0.4)] md:[text-shadow:none]">
           <span>COMBO EXCLUSIVO</span>
           <span className="hidden md:inline mx-2 text-white/90">—</span>
           <span>ACESSO VITALÍCIO</span>
