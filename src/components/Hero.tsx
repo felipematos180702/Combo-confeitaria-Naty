@@ -57,7 +57,7 @@ export default function Hero() {
             );
           })}
         </div>
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-black/40" />
         {/* Soft transition to the next section */}
         <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-eggshell to-transparent pointer-events-none" />
       </div>
@@ -69,8 +69,10 @@ export default function Hero() {
         className="flex items-center gap-1.5 md:gap-2 mb-4 md:mb-8"
       >
         <span className="hidden md:inline text-xl leading-normal">👑</span>
-        <span className="font-bold text-[11px] md:text-sm tracking-[0.2em] text-white/90 uppercase drop-shadow-sm">
-          COMBO EXCLUSIVO — ACESSO VITALÍCIO
+        <span className="font-bold text-[14px] md:text-sm tracking-[0.2em] text-white/90 uppercase drop-shadow-sm flex flex-col md:flex-row items-center">
+          <span>COMBO EXCLUSIVO</span>
+          <span className="hidden md:inline mx-2">—</span>
+          <span>ACESSO VITALÍCIO</span>
         </span>
       </motion.div>
 
@@ -78,7 +80,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="font-serif text-[23px] md:text-[53px] leading-[1.1] md:leading-tight text-vermillion max-w-5xl mt-[82px] md:mt-0 mb-[40px] md:mb-8 tracking-tight font-bold px-4 md:px-2 drop-shadow-2xl [text-shadow:_3px_4px_8px_rgb(0_0_0_/_80%)]"
+        className="font-serif text-[26px] md:text-[53px] leading-[29.3px] md:leading-tight text-vermillion max-w-5xl mt-[82px] md:mt-0 mb-[40px] md:mb-8 tracking-tight font-bold pl-[14px] md:px-2 pt-0 pb-0 mr-[-33px] md:mr-0 ml-[-31px] md:ml-0 drop-shadow-2xl [text-shadow:_3px_4px_8px_rgb(0_0_0_/_80%)]"
       >
         Esses foram os meus dois cursos mais vendidos nos últimos anos e agora você pode garantir o combo com acesso vitalício.
       </motion.h1>
@@ -87,7 +89,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 1.2 }}
-        className="text-[12px] md:text-xl text-text-dark font-medium max-w-2xl leading-relaxed mt-[36px] md:mt-0 mb-6 md:mb-12 shadow-md bg-eggshell p-4 md:p-6 rounded-2xl px-5 md:px-10"
+        className="text-[13px] md:text-xl text-text-dark font-medium max-w-2xl leading-relaxed mt-[36px] md:mt-0 mb-6 md:mb-12 ml-[-11px] md:ml-0 mr-[-12px] md:mr-0 shadow-md bg-eggshell p-4 md:p-6 rounded-2xl px-5 md:px-10"
       >
         Centenas de confeiteiras aprenderam o meu método e começaram a faturar com doces de vitrine e bolos festivos todos os dias.
       </motion.p>
@@ -98,10 +100,12 @@ export default function Hero() {
         transition={{ duration: 0.4, delay: 0.6 }}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="w-full md:w-auto mt-[23px] md:mt-0"
+        className="w-full md:w-auto mt-[16px] md:mt-0"
       >
         <a 
-          href="#cta" 
+          href="https://pay.hotmart.com/H103943890J?checkoutMode=10&hotfeature=51&_hi=eyJzaWQiOiIxN2RjMWU2NzdkOWM0NWVjOWJiZjg2Y2U2M2M0NDc3MiIsImNpZCI6IjE3NzkyMDM5NzQ0NzEyNzE1NDE4Mzg4NjAzOTA3MCIsImJpZCI6IjE3NzkyMDM5NzQ0NzEyNzE1NDE4Mzg4NjAzOTA3MCJ9.1779203974646&bid=1779203975986" 
+          target="_blank"
+          rel="noopener noreferrer"
           className="w-full md:w-auto bg-[#41cc5d] text-white font-bold text-[13px] md:text-lg px-6 md:px-12 py-3 md:py-5 rounded-full shadow-2xl shadow-[#41cc5d]/40 hover:bg-white hover:text-[#41cc5d] border-2 border-transparent hover:border-white transition-all duration-300 inline-block"
         >
           <span className="hidden md:inline text-lg">🔥</span> Quero garantir meu combo agora!
@@ -112,7 +116,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.8 }}
-        className="mt-8 text-[12px] md:text-sm text-white/90 font-medium flex items-center gap-1 relative z-10"
+        className="mt-[7px] md:mt-8 text-[12px] md:text-sm text-white/90 font-medium flex items-center gap-1 relative z-10"
       >
         <span className="hidden md:inline text-vermillion text-sm">⚡</span> Vagas limitadas — preço promocional por tempo limitado
       </motion.p>
