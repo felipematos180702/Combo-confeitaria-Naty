@@ -30,7 +30,7 @@ export default function Hero() {
     <section className="relative min-h-[90vh] flex flex-col items-center justify-center text-center px-6 pt-12 pb-8 md:py-20 overflow-hidden">
       {/* Background Mosaic and Overlay */}
       <div className="absolute inset-0 -z-10 bg-eggshell overflow-hidden pointer-events-none" style={{ transform: 'translateZ(0)' }}>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 w-full p-4 gap-4 opacity-20">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 w-full p-4 gap-4 opacity-50">
           {allImages.slice(0, 24).map((id, index) => {
             const imgSrc = index === 0 
               ? "https://lh3.googleusercontent.com/d/1r5t8ZPJDwGReMjAUa1jTuFBbYQ41Ro6I" 
@@ -46,7 +46,7 @@ export default function Hero() {
                 <img 
                   src={imgSrc} 
                   alt="" 
-                  className="w-full h-full object-cover grayscale-[20%]"
+                  className="w-full h-full object-cover grayscale-0"
                   referrerPolicy="no-referrer"
                   onError={(e) => {
                     (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1488477181946-6428a0291777";
@@ -56,7 +56,7 @@ export default function Hero() {
             );
           })}
         </div>
-        <div className="absolute inset-0 bg-black/10" />
+        <div className="absolute inset-0 bg-black/5" />
         {/* Soft transition to the next section */}
         <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-eggshell to-transparent pointer-events-none" />
       </div>
@@ -79,7 +79,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="font-serif text-[26px] md:text-[53px] leading-[29.3px] md:leading-tight text-vermillion max-w-5xl mt-[82px] md:mt-0 mb-[40px] md:mb-8 tracking-tight font-bold pl-[18px] md:px-2 pr-[2px] md:pr-2 pt-0 pb-0 mr-[-12px] md:mr-0 ml-[-22px] md:ml-0 drop-shadow-md md:drop-shadow-2xl [text-shadow:_1px_1px_2px_rgba(0,0,0,0.3),0_0_15px_rgba(255,255,255,0.3)] md:[text-shadow:_3px_4px_8px_rgb(0_0_0_/_80%)]"
+        className="font-serif text-[26px] md:text-[53px] leading-[29.3px] md:leading-tight text-vermillion max-w-5xl mt-[82px] md:mt-0 mb-[40px] md:mb-8 tracking-tight font-bold pl-[18px] md:px-2 pr-[2px] md:pr-2 pt-0 pb-0 mr-[-12px] md:mr-0 ml-[-22px] md:ml-0 drop-shadow-md md:drop-shadow-2xl [text-shadow:_1px_1px_2px_rgba(0,0,0,0.4),0_0_20px_rgba(255,255,255,0.6)] md:[text-shadow:_3px_4px_8px_rgb(0_0_0_/_80%)]"
       >
         Esses foram os meus dois cursos mais vendidos nos últimos anos e agora você pode garantir o combo com acesso vitalício.
       </motion.h1>
