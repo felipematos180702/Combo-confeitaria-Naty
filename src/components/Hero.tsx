@@ -80,7 +80,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="font-serif text-[26px] md:text-[53px] leading-[29.3px] md:leading-tight text-vermillion max-w-5xl mt-[82px] md:mt-0 mb-[40px] md:mb-8 tracking-tight font-bold pl-[14px] md:px-2 pt-0 pb-0 mr-[-33px] md:mr-0 ml-[-45px] md:ml-0 drop-shadow-2xl [text-shadow:_3px_4px_8px_rgb(0_0_0_/_80%)]"
+        className="font-serif text-[26px] md:text-[53px] leading-[29.3px] md:leading-tight text-vermillion max-w-5xl mt-[82px] md:mt-0 mb-[40px] md:mb-8 tracking-tight font-bold pl-[18px] md:px-2 pr-[2px] md:pr-2 pt-0 pb-0 mr-[-12px] md:mr-0 ml-[-22px] md:ml-0 drop-shadow-2xl [text-shadow:_3px_4px_8px_rgb(0_0_0_/_80%)]"
       >
         Esses foram os meus dois cursos mais vendidos nos últimos anos e agora você pode garantir o combo com acesso vitalício.
       </motion.h1>
