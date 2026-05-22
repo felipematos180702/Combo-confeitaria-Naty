@@ -27,7 +27,7 @@ export default function Hero() {
   const allImages = [...mosaicImages, ...mosaicImages, ...mosaicImages];
 
   return (
-    <section className="relative min-h-[90vh] flex flex-col items-center justify-center text-center px-6 pt-12 pb-8 md:py-20 overflow-hidden">
+    <section className="relative min-h-[90vh] flex flex-col items-center justify-center text-center px-6 pt-[6vh] pb-[4vh] md:py-20 overflow-hidden">
       {/* Background Mosaic and Overlay */}
       <div className="absolute inset-0 -z-10 bg-eggshell overflow-hidden pointer-events-none" style={{ transform: 'translateZ(0)' }}>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 w-full p-4 gap-4 opacity-50">
@@ -67,10 +67,10 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="flex items-center gap-1.5 md:gap-2 mb-4 md:mb-8"
+        className="flex items-center gap-1.5 md:gap-2 mb-[3vh] md:mb-8"
       >
         <span className="hidden md:inline text-xl leading-normal">👑</span>
-        <span className="font-bold text-[14px] md:text-sm tracking-[0.2em] text-white uppercase flex flex-col md:flex-row items-center [text-shadow:_0_4px_12px_rgba(61,35,20,0.8),0_2px_4px_rgba(61,35,20,0.4)] md:[text-shadow:none]">
+        <span className="font-bold text-[16px] md:text-sm tracking-[0.2em] text-white uppercase flex flex-col md:flex-row items-center [text-shadow:_0_4px_12px_rgba(61,35,20,0.8),0_2px_4px_rgba(61,35,20,0.4)] md:[text-shadow:none]">
           <span>COMBO EXCLUSIVO</span>
           <span className="hidden md:inline mx-2 text-white/90">—</span>
           <span>ACESSO VITALÍCIO</span>
@@ -81,7 +81,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="font-serif text-[26px] md:text-[53px] leading-[29.3px] md:leading-tight text-vermillion max-w-5xl mt-[82px] md:mt-0 mb-[40px] md:mb-8 tracking-tight font-bold pl-[18px] md:px-2 pr-[2px] md:pr-2 pt-0 pb-0 mr-[-12px] md:mr-0 ml-[-22px] md:ml-0 drop-shadow-md md:drop-shadow-2xl [text-shadow:_1px_1px_2px_rgba(0,0,0,0.4),0_0_20px_rgba(255,255,255,0.6)] md:[text-shadow:_3px_4px_8px_rgb(0_0_0_/_80%)]"
+        className="font-serif text-[26px] md:text-[53px] leading-[29.3px] md:leading-tight text-vermillion max-w-5xl mt-[10vh] md:mt-0 mb-[5vh] md:mb-8 tracking-tight font-bold pl-[18px] md:px-2 pr-[2px] md:pr-2 pt-0 pb-0 mr-[-12px] md:mr-0 ml-[-22px] md:ml-0 drop-shadow-md md:drop-shadow-2xl [text-shadow:_1px_1px_2px_rgba(0,0,0,0.4),0_0_20px_rgba(255,255,255,0.6)] md:[text-shadow:_3px_4px_8px_rgb(0_0_0_/_80%)]"
       >
         Esses foram os meus dois cursos mais vendidos nos últimos anos e agora você pode garantir o combo com acesso vitalício.
       </motion.h1>
@@ -90,7 +90,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 1.2 }}
-        className="text-[13px] md:text-xl text-text-dark font-medium max-w-2xl leading-relaxed mt-[36px] md:mt-0 mb-6 md:mb-12 ml-[-11px] md:ml-0 mr-[-12px] md:mr-0 shadow-md bg-eggshell p-4 md:p-6 rounded-2xl px-5 md:px-10"
+        className="text-[13px] md:text-xl text-text-dark font-medium max-w-2xl leading-relaxed mt-[4vh] md:mt-0 mb-[3vh] md:mb-12 ml-[-11px] md:ml-0 mr-[-12px] md:mr-0 shadow-md bg-eggshell p-4 md:p-6 rounded-2xl px-5 md:px-10"
       >
         Centenas de confeiteiras aprenderam o meu método e começaram a faturar com doces de vitrine e bolos festivos todos os dias.
       </motion.p>
@@ -101,7 +101,7 @@ export default function Hero() {
         transition={{ duration: 0.4, delay: 0.6 }}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="w-full md:w-auto mt-[16px] md:mt-0"
+        className="w-full md:w-auto mt-[2vh] md:mt-0"
       >
         <a 
           href="https://pay.hotmart.com/H103943890J?checkoutMode=10&hotfeature=51&_hi=eyJzaWQiOiIxN2RjMWU2NzdkOWM0NWVjOWJiZjg2Y2U2M2M0NDc3MiIsImNpZCI6IjE3NzkyMDM5NzQ0NzEyNzE1NDE4Mzg4NjAzOTA3MCIsImJpZCI6IjE3NzkyMDM5NzQ0NzEyNzE1NDE4Mzg4NjAzOTA3MCJ9.1779203974646&bid=1779203975986" 
@@ -117,7 +117,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.8 }}
-        className="mt-[7px] md:mt-8 text-[12px] md:text-sm text-white/90 font-medium flex items-center gap-1 relative z-10"
+        className="mt-[2vh] md:mt-8 text-[12px] md:text-sm text-white/90 font-medium flex items-center gap-1 relative z-10"
       >
         <span className="hidden md:inline text-vermillion text-sm">⚡</span> Vagas limitadas — preço promocional por tempo limitado
       </motion.p>
