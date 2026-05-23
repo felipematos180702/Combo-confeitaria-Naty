@@ -69,7 +69,7 @@ export default function Hero() {
         transition={{ duration: 0.6 }}
         className="flex items-center gap-1.5 md:gap-2 mb-[3vh] md:mb-8"
       >
-        <span className="font-bold text-[16px] md:text-sm tracking-[0.2em] text-white uppercase flex flex-col md:flex-row items-center [text-shadow:_0_4px_12px_rgba(61,35,20,0.8),0_2px_4px_rgba(61,35,20,0.4)] md:[text-shadow:_0_0_20px_rgba(74,60,42,0.4),0_10px_20px_rgba(74,60,42,0.2)]">
+        <span className="font-bold text-[15px] tracking-[0.2em] text-white uppercase flex flex-col md:flex-row items-center [text-shadow:_0_4px_12px_rgba(61,35,20,0.8),0_2px_4px_rgba(61,35,20,0.4)]">
           <span>COMBO EXCLUSIVO</span>
           <span className="hidden md:inline mx-2 text-white/90">—</span>
           <span>ACESSO VITALÍCIO</span>
