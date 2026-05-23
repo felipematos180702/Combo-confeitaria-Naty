@@ -81,7 +81,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="font-serif text-[26px] md:text-[53px] leading-[29.3px] md:leading-tight text-vermillion max-w-5xl mt-[10vh] md:mt-0 mb-[5vh] md:mb-8 tracking-tight font-bold pl-[18px] md:px-2 pr-[2px] md:pr-2 pt-0 pb-0 mr-[-12px] md:mr-0 ml-[-22px] md:ml-0 drop-shadow-md md:drop-shadow-2xl [text-shadow:_0_0_20px_rgba(61,35,20,0.6),0_2px_4px_rgba(61,35,20,0.3)] bg-gradient-to-b from-vermillion to-[#a32b2b] bg-clip-text text-transparent md:bg-none md:text-vermillion md:[text-shadow:_0_0_30px_rgba(0,0,0,0.4),0_10px_20px_rgba(0,0,0,0.2)] md:bg-gradient-to-b md:from-vermillion md:to-[#a32b2b] md:bg-clip-text md:text-transparent"
+        className="font-serif text-[26px] md:text-[53px] leading-[29.3px] md:leading-tight text-vermillion max-w-5xl mt-[10vh] md:mt-0 mb-[5vh] md:mb-8 tracking-tight font-bold pl-[18px] md:px-2 pr-[2px] md:pr-2 pt-0 pb-0 mr-[-12px] md:mr-0 ml-[-22px] md:ml-0 drop-shadow-none [text-shadow:_0_0_15px_rgba(255,255,255,0.8),0_0_5px_rgba(255,255,255,0.5)] md:drop-shadow-2xl md:[text-shadow:_0_0_30px_rgba(0,0,0,0.4),0_10px_20px_rgba(0,0,0,0.2)] md:bg-gradient-to-b md:from-vermillion md:to-[#a32b2b] md:bg-clip-text md:text-transparent"
       >
         Esses foram os meus dois cursos mais vendidos nos últimos anos e agora você pode garantir o combo com acesso vitalício.
       </motion.h1>
