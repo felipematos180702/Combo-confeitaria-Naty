@@ -220,7 +220,9 @@ export default function Courses() {
     "18SYF_SzJp-WDAonpgqfQLsmp7WHN7RQY",
     "1uufirr0p0MyD5tTRfGXYevrmutffuCeR",
     "10G6d4dq8cXDXqZK14J-Deq8a9py3b_mp",
-    "1Eb2jk6tmmgZoj7Nsd2imqQDyG0ODBoJp"
+    "1Eb2jk6tmmgZoj7Nsd2imqQDyG0ODBoJp",
+    "1Dw30nCLEq7Expm2ILhTuqGTqWd39sphk",
+    "1ZGsM2Ho30V2QDkJFV4kcJroRSBS-Xf15"
   ];
 
   return (
